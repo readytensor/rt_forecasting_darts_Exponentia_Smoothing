@@ -29,7 +29,7 @@ class Forecaster:
         self,
         trend: Optional[ModelMode] = ModelMode.ADDITIVE,
         damped: Optional[bool] = False,
-        seasonal: Optional[SeasonalityMode] = SeasonalityMode.ADDITIVE,
+        seasonal: Optional[SeasonalityMode] = None,
         seasonal_periods: Optional[int] = None,
         random_state: Optional[int] = 0,
     ):
