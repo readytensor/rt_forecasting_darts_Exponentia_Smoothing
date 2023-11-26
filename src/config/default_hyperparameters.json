@@ -1,6 +1,8 @@
 {
+  "trend": "additive",
   "damped": false,
   "seasonal_periods": null,
+  "seasonal": "additive",
   "random_state": 0
 
 }
