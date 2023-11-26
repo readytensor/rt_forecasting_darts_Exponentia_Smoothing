@@ -2,7 +2,7 @@
   "trend": "additive",
   "damped": false,
   "seasonal_periods": null,
-  "seasonal": "none",
+  "seasonal": "None",
   "random_state": 0
 
 }
