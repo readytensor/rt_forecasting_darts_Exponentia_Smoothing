@@ -92,8 +92,11 @@ class Forecaster:
         series = TimeSeries.from_dataframe(
             history, data_schema.time_col, data_schema.target
         )
-
-        model.fit(series)
+        try:
+            model.fit(series)
+        except ValueError:
+            model.seasonal = None
+            model.fit(series)
 
         return model
 
