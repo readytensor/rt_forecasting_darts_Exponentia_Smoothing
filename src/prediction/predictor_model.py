@@ -89,9 +89,7 @@ class Forecaster:
             random_state=self.random_state,
         )
 
-        series = TimeSeries.from_dataframe(
-            history, data_schema.time_col, data_schema.target
-        )
+        series = TimeSeries.from_dataframe(history, value_cols=data_schema.target)
         try:
             model.fit(series)
         except ValueError:
